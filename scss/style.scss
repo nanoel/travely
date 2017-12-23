@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|CRaleway:400,600,700,800,900');
+@import "normalize";
+@import "layout";
+@import "slick";
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+body{
+	font: 700 19px/1.4 Raleway, sans-serif;
+	color: #3f3e41;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1210px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-header {
+	background: #FFF;
+	// min-height: 80px;
+	padding-top: 45px;
+	padding-bottom: 10px;
+	// position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background: linear-gradient(to bottom,
+		rgba(255,255,255,0.9) 25%,
+		rgba(255,255,255,0.8) 55%,
+		rgba(255,255,255,0.7) 65%,
+		rgba(255,255,255,0.6) 75%,
+		rgba(255,255,255,0.5) 85%,
+		rgba(255,255,255,0) 100%);
+}
+
+.ba-logo {
+	float: left;
+	margin-top: 50px;
+}
+
+.ba-nav{
+	float: right;
+
+
+	&__list{
+		margin: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		li{
+
+			text-align: center;
+			margin-left: 30px    ;
+			a{
+				width: 140px;
+				padding: 15px 0;
+				display: block;
+				text-decoration: none;
+				color: #3f3e41;
+				text-transform: uppercase;
+				p{
+					display: block;
+				}
+				&:hover{
+					background-color:  #fd5c08;
+				}
+			}
+		}
+	}
+}
+
+
+// first section ba-travel
+
+.ba-travel {
+	background: url(../img/holiday-bg.jpg) 50%;
+	background-size: cover;
+	color: #FFF;
+	min-height: 100vh;
+
+	&__content {
+		max-width: 670px;
+		padding: 386px 0 155px 0;
+	}
+
+	&__subtitle {
+		font-size: 38px;
+		font-weight: 400;
+		margin-bottom: -4px;
+		line-height: 1;
+	}
+
+	&__title {
+		font-size: 100px;
+		font-weight: 800;
+		line-height: 1;
+	}
+
+	p {
+		font-size: 17px;
+		font-weight: 400;
+	}
+
+}
+
+.ba-photos__hov{
+	background: rgba(255,255,255, 0.8);
+	position: absolute;
+	transform: translateY(-250px);
+	color:  #3f3e41;
+	z-index: -2;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	margin-top: 140px;
+	padding: 35px 80px 35px 25px;
+
+	h5 {
+		color:  #fd5c08;
+		font-size: 23px;
+		font-weight: 400;
+		line-height: 2;
+	}
+
+	p {
+		font-size: 34px;
+		line-height: 1.2;
+		margin: 0;
+	}
+
+	span {
+		font-size: 14px;
+		line-height: 2;
+	}
+}
+
+.ba-cities{
+    background: #fff url(../img/world-map.jpg) 50%;
+    background-size: cover;
+    &__content{
+        padding: 114px 0;
+    }
+    &__left{
+        float: left;
+        width: 50%;
+        text-transform: uppercase;
+
+    }
+    &__right{
+        float: right;
+        width: 50%;
+        padding-left: 18px;
+        p{
+            font-weight: 400;
+            font-size: 17px;
+            margin-top: 6px;
+            line-height: 1.65;
+        }
+    }
+    &__subtitle{
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1;
+    }
+    &__title{
+        color:  #fd5c08 ;
+        font-size: 80px;
+        font-weight: 800;
+        line-height: 1;
+    }
+
+	&__photos{
+		margin-bottom: 38px;
+		.ba-photos{
+			&:hover {
+				&__hov {
+					transform: translateY(100px);
+				}
+			}
+			position: relative;
+			display: block;
+			float: left;
+			img{
+				display: block;
+			}
+		}
+
+	}
+	&__starting{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		color:  #ffffff ;
+		padding: 17px 30px;
+		p{
+			font-size: 16.01px;
+			font-weight: 400;
+			line-height: 1.6;
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+		.ba-price{
+			font-size: 42px;
+			font-weight: 800;
+			line-height: 27px;
+			margin-top: 5px;
+			padding-left: 31px;
+		}
+	}
+	.ba-button{
+		float: right;
+		margin-right: 19px;
+	}
+}
+
+.ba-offers {
+	background: url(../img/africa-bg.jpg) 50%;
+	background-size: cover;
+	color: #FFF;
+	text-align: center;
+
+
+	padding: 100px 130px 60px;
+
+	&__title {
+		font: 400 30px/3 'Kaushan Script', sans-serif;
+		text-align: center;
+	}
+}
+
+.ba-slade__title {
+	font-size: 100px;
+	font-weight: 800;
+	line-height: 1;
+	margin: 0;
+}
+.ba-slade__subtitle {
+	margin: 0;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 1;
+	// text-align: center;
+}
+
+.ba-slidde {
+}
+
+
+.ba-map {
+	min-height: 600px;
+}
+
